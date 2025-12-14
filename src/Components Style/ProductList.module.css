@@ -1,0 +1,27 @@
+.product-list{
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fill , minmax(280px , 1fr));
+    background-color: #3f3f3f;
+}
+
+
+.product-list::-webkit-scrollbar {width: 10px; }
+.product-list::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.product-list::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+}
+.product-list::-webkit-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.5);
+}
+
+@media only screen and (max-width: 1193px){.product-list{ justify-items: center; }}

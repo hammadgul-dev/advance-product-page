@@ -1,0 +1,119 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    background: #1a1a1a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.search-container{
+    display: flex;
+    align-items: center;
+    width: 56%;
+    padding: 8px 21px;
+    gap: 18px;
+    position: relative;
+}
+
+.hamburger , .search-icon{
+    display: flex;
+    cursor: pointer;
+    color: #f1f1f1;
+    transition: color 0.2s ease-in-out, transform 0.1s ease-out;
+}
+.hamburger{ font-size: 22px; color: white; }
+.hamburger:hover { color: #ffc107 }
+.hamburger:active { 
+    color: #ffc107b4; 
+    transform: scale(0.95); 
+    transform: rotate(-15deg);
+}
+.search-icon{
+    position: absolute;
+    left: 75px;
+    pointer-events: none;
+}
+
+.search-container input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 17px 10px 42px;
+    background-color: #333333;
+    border: 1px solid #555555;
+    color: #f1f1f1;
+    transition: all .2s linear;
+}
+.search-container input:focus{
+    outline: none;
+    border-color: rgba(255, 217, 0, 0.808);
+}
+
+
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 9px 30px;
+    width: 44%;
+    position: relative;
+    top: 4px;
+}
+
+.action-icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 4px;
+    font-size: 22px;
+    width: 130px;
+}
+
+.wishlist-icon, 
+.cart-icon {
+    cursor: pointer;
+    color: #f1f1f1;
+    transition: all .2s linear;
+}
+.wishlist-icon:hover, 
+.cart-icon:hover {
+    transform: scale(1.13);
+    color: gold;
+}
+.wishlist-icon:active, 
+.cart-icon:active {
+    color: gold;
+    transform: scale(0.8);
+    transform: rotate(-15deg);
+}
+
+.wishlist , .cart{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.wishlist p , .cart p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    bottom: 23px;
+    left: 12px;
+    cursor: pointer;
+    font-size: 10px;
+    position: absolute;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+}
+
+@media only screen and (max-width : 592px){
+    .navbar{ flex-direction: column-reverse; height: 120px; }
+    .search-container{ width: 100%; position: relative;left: -25px;}
+    .actions{ align-self: flex-end; }
+    .hamburger{position: relative; top: -59px;left: 18px;}
+}

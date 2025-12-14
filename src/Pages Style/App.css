@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Cause:wght@100..900&family=Geom:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace, 'Poppins',  "Segoe UI",'Lucida Sans';
+}
+
+body{overflow-x: hidden;}
+
+:root{
+    --headingFontFamily: 'Poppins', monospace, 'Lucida Sans', system-ui, Arial, sans-serif;
+}
+
+::selection {
+    background-color: #08ce8cb2; 
+    color: white; 
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 , button , input{
+   font-family: monospace;
+}
+button{ cursor: pointer; }
+input , button , select , textarea{ outline: none; border: none; font-family: var(--headingFontFamily);}
+li{ list-style: none; }
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+    cursor: grabbing;
+}
+
+::-webkit-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.5);
+}
+

@@ -1,0 +1,13 @@
+.msg-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.msg-container h1{
+    font-size: 7rem;
+    text-align: center;
+    color: red;
+    text-shadow:  5px 0 15px rgba(0, 0, 0, 0.7);
+}
