@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import App from "./Pages/App"
 import UserForm from "./Components/UserForm";
 import AboutUs from "./Pages/AboutUs";
@@ -14,7 +14,7 @@ const ProductDetail = lazy(()=> import("./Components/ProductDetail"))
 import AuthWrapper from "./Components/AuthWrapper";
 
 
-let routes = createBrowserRouter([
+let routes = createHashRouter([
     { path: "/", element : 
         <AuthWrapper>
             <App />
