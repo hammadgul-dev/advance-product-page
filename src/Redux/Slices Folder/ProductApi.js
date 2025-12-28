@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 let fetchProducts = createAsyncThunk("Products" , async()=>{
-    let resp = await fetch('public/Products/data.json')
+    let resp = await fetch('/products/data.json')
     let jsonResp = await resp.json()
     return jsonResp.products
 })
