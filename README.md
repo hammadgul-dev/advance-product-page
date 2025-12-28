@@ -14,6 +14,9 @@ A responsive product management project built with **React** and **Redux**. It i
 * **State Management:** Redux
 * **Storage:** LocalStorage
 
+> [!WARNING]
+> **Data Loading Issue:** If products fail to load, your internet provider (ISP) might be blocking the data path. Using a **VPN** will resolve this issue and show all products immediately.
+
 ### 🔗 Live Demo
 Check out the live project here:  
 👉 [https://hammadgul-dev.github.io/advance-product-page/](https://hammadgul-dev.github.io/advance-product-page/)
