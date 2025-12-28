@@ -12,7 +12,13 @@ function ProductCard({product}) {
     <div className={style["product-card"]}>
 
         <div className={style["img-wrapper"]}>
-            <img src={product.thumbnail} alt={product.title} />
+            <img 
+            src={product.thumbnail} 
+            alt={product.title} 
+            onError={(e) => {
+                e.target.src = "https://www.slntechnologies.com/wp-content/uploads/2017/08/ef3-placeholder-image.jpg"
+            }}
+            />
         </div>
 
         <div className={style["product-detail"]}>
